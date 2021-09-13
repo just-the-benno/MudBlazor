@@ -168,6 +168,7 @@ blubSingle = function (popoverNode) {
 
         popoverNode.style['left'] = (left) + 'px';
         popoverNode.style['top'] = (top) + 'px';
+        popoverNode.style['max-width'] = (boundingRect.width) + 'px';
     }
 }
 
@@ -177,8 +178,6 @@ blub = function () {
     for (let i = 0; i < items.length; i++) {
         const popoverNode = document.getElementById('popover-' + items[i]);
         blubSingle(popoverNode);
-
-
     }
 }
 
